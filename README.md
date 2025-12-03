@@ -91,4 +91,5 @@ Average ipSAE: 0.804
 At the time of leaderboard conclusion, if my ipSAE matched perfectly to their calculated ipSAE, this would put me in the top 50 (~7%) designers for a zero shot, 10-average submission.
 
 ## Conclusion
-I hope this was interesting and that you learned something along the way! Please feel free to use my code if you find it useful. I am sure that sooner or later I'll collect all the data I generated for this, put it on Zenodo, and link to it back here so that anyone can play around with the structures and designs I came up with. In the mean time I've truncated the sequences just in case the powers that be would like to keep them secretive for now. 
+I hope this was interesting and that you learned something along the way! Please feel free to use my code if you find it useful. I am sure that sooner or later I'll collect all the data I generated for this, put it on Zenodo, and link to it back here so that anyone can play around with the structures and designs I came up with. In the mean time I've truncated the sequences just in case the powers that be would like to keep them secretive for now. Keep a look out for Ashlyn's work in the near future (if she writes anything about it and publishes it and I remember I'll link it here), she had a very cool design process to come up with some potentially __very__ strong binders!
+
