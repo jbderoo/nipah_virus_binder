@@ -1,0 +1,9 @@
+There are many different ways to make an MSA. I used MMseqs2. I have this set up to run on a dedicated machine that holds all the databases in memory, and therefore is very fast. I would reccomend consulting the MMseqs2 github and the ColabFold github. After getting MMseqs2 databases set up, the call to make it work looks something like:
+
+/path/to/colabfold_search $INPUT_FASTA /path/to/databases/ $OUTPUT_DIR \
+        --db1 /path/to/uniref30_2302_db \
+	    --db3 /path/to/colabfold_envdb_202108_db \
+	    --db-load-mode 2 \
+        --mmseqs /path/to/executable/mmseqs
+
+

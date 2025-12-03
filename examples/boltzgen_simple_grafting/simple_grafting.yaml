@@ -1,0 +1,30 @@
+entities:
+  # Target structure - chain C from 8k0d.cif
+  - file:
+      path: nipah_virus_and_macaca_loop.pdb
+      include:
+        - chain:
+            id: A
+
+  # Designed protein incorporating chain A motif (residues 103-113) with flanking designed regions
+  - file:
+      path: nipah_virus_and_macaca_loop.pdb
+      include:
+        - chain:
+            id: E
+
+      # Design flanking after the motif
+      design_insertions:
+        - insertion:
+            id: E
+            res_index: 12  # Insert C-terminal designed region
+            num_residues: 60
+        - insertion:
+            id: E
+            res_index: 1  # Insert N-terminal designed region
+            num_residues: 60
+
+# Renumber residues sequentially for positional encoding
+reset_res_index:
+  - chain:
+      id: E

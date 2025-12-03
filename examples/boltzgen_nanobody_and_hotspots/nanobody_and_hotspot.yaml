@@ -1,0 +1,15 @@
+entities:
+  - protein:
+      id: B                      # Chain ID for the binder
+      sequence: 50..250          # Variable length between 50-120 amino acids
+      
+  - file:
+      path: 8K0D.cif  
+      include:
+        - chain:
+            id: C 
+
+      binding_types:
+            - chain:
+                id: C
+                binding: 19...21,40...43,81,103,242,259,360,361 

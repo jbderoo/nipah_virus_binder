@@ -1,0 +1,38 @@
+entities:
+  # Target structure - chain C from 8k0d.cif is now chain A after cleaning up and isolating the relevant receptor and motifs
+  - file:
+      path: remerged_nipah_AB.pdb
+      include:
+        - chain:
+            id: A
+
+  # Designed protein incorporating multi-chain motifs with flanking designed regions
+  - file:
+      path: remerged_nipah_AB.pdb
+      include:
+        - chain:
+            id: B
+
+      # Design flanking after the motif
+      design_insertions:
+        - insertion:
+            id: B
+            res_index: 216  # Insert designs after short coil
+            num_residues: 50
+        - insertion:
+            id: B
+            res_index: 123  # Insert designs between long coil and short coil
+            num_residues: 12
+        - insertion:
+            id: B
+            res_index: 13  # Insert designs between Macaca tongue and long coil
+            num_residues: 75
+        - insertion:
+            id: B
+            res_index: 1  # Insert N-terminal designed region of Macaca tongue
+            num_residues: 50
+
+# Renumber residues sequentially for positional encoding
+reset_res_index:
+  - chain:
+      id: B

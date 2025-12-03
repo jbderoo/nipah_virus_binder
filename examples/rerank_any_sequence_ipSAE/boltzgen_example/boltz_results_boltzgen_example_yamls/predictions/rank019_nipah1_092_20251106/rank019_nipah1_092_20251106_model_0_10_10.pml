@@ -1,0 +1,8 @@
+# Chn1 Chn2  PAE Dist  Type   ipSAE    ipSAE_d0chn ipSAE_d0dom  ipTM_af  ipTM_d0chn     pDockQ     pDockQ2    LIS      n0res  n0chn  n0dom   d0res   d0chn   d0dom  nres1   nres2   dist1   dist2  Model
+# A    B     10   10   asym  0.541684    0.849391    0.815684    0.722    0.849391      0.0183     0.0073     0.4936     126    728    539    4.16    9.28    8.20    413     126      59      40   boltz_results_boltzgen_example_yamls/predictions/rank019_nipah1_092_20251106/rank019_nipah1_092_20251106_model_0
+alias color_A_B, color gray80, all; color magenta, chain  A and resi 177-183+187-324+330-419+424-601; color marine, chain  B and resi 1-126
+
+# B    A     10   10   asym  0.731058    0.804721    0.768909    0.875    0.650231      0.0183     0.0073     0.4512     435    728    557    7.49    9.28    8.31    122     435      40      59   boltz_results_boltzgen_example_yamls/predictions/rank019_nipah1_092_20251106/rank019_nipah1_092_20251106_model_0
+# A    B     10   10   max   0.731058    0.849391    0.815684    0.875    0.849391      0.0183     0.0073     0.4724     435    728    539    7.49    9.28    8.20    435     126      59      40   boltz_results_boltzgen_example_yamls/predictions/rank019_nipah1_092_20251106/rank019_nipah1_092_20251106_model_0
+alias color_B_A, color gray80, all; color marine, chain  B and resi 2-123; color magenta, chain  A and resi 168-602
+

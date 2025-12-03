@@ -1,0 +1,8 @@
+# Chn1 Chn2  PAE Dist  Type   ipSAE    ipSAE_d0chn ipSAE_d0dom  ipTM_af  ipTM_d0chn     pDockQ     pDockQ2    LIS      n0res  n0chn  n0dom   d0res   d0chn   d0dom  nres1   nres2   dist1   dist2  Model
+# A    B     10   10   asym  0.178479    0.564526    0.456411    0.617    0.487316      0.0183     0.0073     0.1163     129    825    485    4.21    9.76    7.84    301     184      82      88   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_2/nipah_motif_bb2_1_2_model_0
+alias color_A_B, color gray80, all; color magenta, chain  A and resi 19-73+85-112+114+116-136+178-189+191+201+203+219-234+249-258+261-271+281-287+290-297+317-321+348+350-351+354-357+361-369+410-416+427-428+440-456+462-471+475-483+485+508-526+534-542+545-547+549+551+560-579+590-598; color marine, chain  B and resi 5-6+8-89+104-120+122-123+126+137-138+140-216+219
+
+# B    A     10   10   asym  0.277867    0.562629    0.442402    0.665    0.449725      0.0183     0.0073     0.1192     227    825    456    5.59    9.76    7.64    172     284      89      73   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_2/nipah_motif_bb2_1_2_model_0
+# A    B     10   10   max   0.277867    0.564526    0.456411    0.665    0.487316      0.0183     0.0073     0.1178     227    825    485    5.59    9.76    7.84    301     184      82      89   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_2/nipah_motif_bb2_1_2_model_0
+alias color_B_A, color gray80, all; color marine, chain  B and resi 5-32+41-62+67-81+110-127+132-220; color magenta, chain  A and resi 16-68+93+96-98+100-121+123-124+127+169-201+203-204+206-207+220-232+251-268+282-291+293+321-322+351-360+362-365+441-456+463-472+476-486+507-525+535-551+559-579+590-602
+

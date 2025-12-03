@@ -1,0 +1,6 @@
+
+Chn1 Chn2  PAE Dist  Type   ipSAE    ipSAE_d0chn ipSAE_d0dom  ipTM_af  ipTM_d0chn     pDockQ     pDockQ2    LIS       n0res  n0chn  n0dom   d0res   d0chn   d0dom  nres1   nres2   dist1   dist2  Model
+A    B     10   10   asym  0.000000    0.000000    0.000000    0.367    0.222454      0.0183     0.0073     0.0000       0    825      0    1.04    9.76    1.04      0       0       0       0   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_4/nipah_motif_bb2_1_4_model_0
+B    A     10   10   asym  0.000000    0.000000    0.000000    0.392    0.201816      0.0183     0.0073     0.0000       6    825      0    1.04    9.76    1.04      0       0       0       0   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_4/nipah_motif_bb2_1_4_model_0
+A    B     10   10   max   0.000000    0.000000    0.000000    0.392    0.222454      0.0183     0.0073     0.0000       6    825      0    1.04    9.76    1.04      0       0       0       0   boltz_results_nipah_yamls/predictions/nipah_motif_bb2_1_4/nipah_motif_bb2_1_4_model_0
+
