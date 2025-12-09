@@ -1,0 +1,9 @@
+{
+    "design_path": "/path/to/output/dir/nipah_out",
+    "binder_name": "nipah_nickname",
+    "starting_pdb": "/path/to/BindCraft_example/cleaned_nipah.pdb",
+    "chains": "A",
+    "target_hotspot_residues": "A20,A43,A82,A152,A203,A361",
+    "lengths": [100, 250],
+    "number_of_final_designs": 1
+}

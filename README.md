@@ -56,7 +56,8 @@ Many of the RFDiffusion - ProteinMPNN - Boltz2 binders had very large contact su
 See `examples/RFDiffusion_ProteinMPNN_Boltz2/4_Boltz2`.
 
 ### Reranking of BoltzGen, Protein-Hunter, and BindCraft designs
-In order to differentiate and rank, somewhat globally, all the binders designed across all the modalities, I hijacked the last couple of steps in the RFDiffusion - ProteinMPNN - Boltz2 pipeline and reimplemented it. The pipeline is run from a single script in `examples/rerank_any_sequence_ipSAE/boltz2_ipsae_pipeline.sh`. It expects a single csv as input, and at least two of these columns must be `id` and `designed_sequence`. There are a few more input variables that are not as critical, and exist purely to help stay organized.
+In order to differentiate and rank, somewhat globally, all the binders designed across all the modalities, I hijacked the last couple of steps in the RFDiffusion - ProteinMPNN - Boltz2 pipeline and reimplemented it. The pipeline is run from a single script in `examples/rerank_any_sequence_ipSAE/boltz2_ipsae_pipeline.sh`. It expects a single csv as input, and at least two of these columns must be `id` and `designed_sequence`. There are a few more input variables that are not as critical, and exist purely to help stay organized. Effectively what I'm doing is taking the top sequences from each method (all designed binders designed by BoltzGen that passed the BoltzGen filters; all BindCraft binders that passed the BindCraft filters; all Protein-Hunter... etc) and refolding the top sequences with the nipah virus sequence to perfectly recapitulate what the competition is going to do. 
+
 
 ```
 design_csv=boltzgen_final_designs_4.csv               # input csv with columns `id` and `designed_sequence`
@@ -68,6 +69,8 @@ organizing_dir_name=boltzgen_example                  # dir name where all files
 ```
 
 Then run the script (slurm submission, nohup background, etc) and wait for it to finish. At the end you get 2 csv's out; one is a submission csv that makes it easy to drag and drop into the nipah virus competition upload, capped at 10 sequences. The other is a full ranking of every sequence, along with ipSAE values and whether or not it was a steric occluder. 
+
+To see examples of how I ran BindCraft and Protein-Hunter, check out `examples/BindCraft_run` and `examples/Protein-Hunter_run`, respectively.
 
 ## Final thoughts
 Unfortunately, I did not perform particularly well. Here's what my final submission looked like. They changed the rules and we had to pick a single submission that was to be considered; originally, I think it was supposed to be all sequences submitted but they walked this back due to sheer engagement. While this is good and engaging for the community, it was bad for me in that I took a "make many shots on goal and submit many good sequences" approach. Additionally, hindsight 20/20, if I cared about being very highly rated on the leaderboards, I would have submitted one sequence per day; there was high discrepency in the ipSAE values I calculated and what they calculated. I think this is simply due to the fact that boltz is not a deterministic model, therefore tiny differences in structure and PAE make big changes in ipSAE. While it would have been nice to be ranked highly, the ultimate goal was more to showcase what this protein design procedure may look like to someone who isn't as familar with it. 
