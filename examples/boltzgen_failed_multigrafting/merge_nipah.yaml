@@ -1,14 +1,14 @@
 entities:
   # Target structure - chain C from 8k0d.cif is now chain A after cleaning up and isolating the relevant receptor and motifs
   - file:
-      path: remerged_nipah_AB.pdb
+      path: remerged_nipah.pdb
       include:
         - chain:
             id: A
 
   # Designed protein incorporating multi-chain motifs with flanking designed regions
   - file:
-      path: remerged_nipah_AB.pdb
+      path: remerged_nipah.pdb
       include:
         - chain:
             id: B
